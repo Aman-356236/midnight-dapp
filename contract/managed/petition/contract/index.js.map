@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "file": "index.js",
+  "sourceRoot": "../../../../",
+  "sources": ["contract/petition.compact", "compiler/standard-library.compact"],
+  "names": [],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EASA;;;;;;;;;;;;;MAIA,AAAA,IAWC;;;;;;;;;;;;;;;;;;;;;;OAAA;;;;GAbA;EAFD;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IALA;;;;;;;;;yEAAuC;IACvC;;;;;;;;;;yEAAyC;UAKrC,KAAc;IAAd;;;;;;;2HAAA,KAAc;;yEAAA;;;;;;;GACjB;ECXD,AAAA,oBAAA,SAAA;;uDAAA;uDAAA;;;EDOA,AAAA,gBAAmC;;0DAAnC,aAAmC;;;;;;;;;;;;;;GAAA;EAMnC,AAAA,OAWC;UAVS,QAAwB;UACxB,WAAuD,4BAAf,QAAM,EAAE,QAAM;qDAGvD;;;;;;;;;;;4KAAkB,WAAS;;;;0HAAjB;;IAIf;;;;;;;;;;2HAAkB,WAAS;;;;;wEAAjB;UACV,KAAc;IAAd;;;;;;;2HAAA,KAAc;;yEAAA;;GACjB;;;;;;;;;;;;;;;;IApBD;qCAAA;;;;;;;;;;;0GAAuC;KAAA;IACvC;;;;;uCAAA;;;;;;;;;;;;;;;;4GAAyC;;;;;;uCAAzC;;;;;;;;;;;;4GAAyC;;;;;;;;;;;;;;uCAAzC;;;;;;;;;;;;;;;4GAAyC;;;;;;;;;KAAA;;;;;;;;;;"
+}

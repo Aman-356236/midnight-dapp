@@ -1,0 +1,25 @@
+pragma language_version 0.23;
+
+import CompactStandardLibrary;
+
+export ledger signatureCount: Uint<64>;
+export ledger nullifiers: Set<Bytes<32>>;
+
+witness getUserSecret(): Bytes<32>;
+
+constructor () {
+    signatureCount = 0;
+}
+
+export circuit sign(): [] {
+    const secret = getUserSecret();
+    const nullifier = persistentCommit<Bytes<32>>(secret, secret);
+
+    assert(
+        !nullifiers.member(nullifier),
+        "This private identity has already signed"
+    );
+
+    nullifiers.insert(nullifier);
+    signatureCount = 1;
+}
