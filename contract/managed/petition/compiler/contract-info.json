@@ -34,11 +34,7 @@
       "name": "signatureCount",
       "index": 0,
       "exported": true,
-      "storage": "Cell",
-      "type": {
-        "type-name": "Uint",
-        "maxval": 18446744073709551615
-      }
+      "storage": "Counter"
     },
     {
       "name": "nullifiers",

@@ -2,13 +2,12 @@ pragma language_version 0.23;
 
 import CompactStandardLibrary;
 
-export ledger signatureCount: Uint<64>;
+export ledger signatureCount: Counter;
 export ledger nullifiers: Set<Bytes<32>>;
 
 witness getUserSecret(): Bytes<32>;
 
 constructor () {
-    signatureCount = 0;
 }
 
 export circuit sign(): [] {
@@ -21,5 +20,5 @@ export circuit sign(): [] {
     );
 
     nullifiers.insert(nullifier);
-    signatureCount = 1;
+    signatureCount.increment(1);
 }
